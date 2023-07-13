@@ -1,0 +1,13 @@
+@use "./../styles/variables";
+
+.link {
+  color: var(--black-color);
+  transition: var(--transition);
+  font-weight: 400;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--violet-color);
+  }
+}
