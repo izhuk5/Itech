@@ -1,13 +1,15 @@
-@use "./../styles/variables";
-
 .link {
   color: var(--black-color);
   transition: var(--transition);
-  font-weight: 400;
+  font-weight: 700;
 
   &:hover,
   &:active,
   &:focus {
     color: var(--violet-color);
   }
+}
+
+.link_active {
+  color: var(--violet-color);
 }
