@@ -17,17 +17,18 @@ footer {
   background-position: center;
   z-index: -1;
 
-  animation: wave 2s ease-in-out infinite alternate both;
+  // Поки що не працює адекватно
+  // animation: wave 2s ease-in-out infinite alternate both;
 
-  @keyframes wave {
-    0% {
-      transform: rotate(1deg) scaleX(-1);
-    }
+  // @keyframes wave {
+  //   0% {
+  //     transform: rotate(1deg) scaleX(-1);
+  //   }
 
-    100% {
-      transform: rotate(-1deg) scaleX(-1);
-    }
-  }
+  //   100% {
+  //     transform: rotate(-1deg) scaleX(-1);
+  //   }
+  // }
 }
 
 .footer__container {
