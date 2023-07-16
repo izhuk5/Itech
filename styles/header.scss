@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 .top-banner {
   height: 75px;
   background-image: url("./../assets/images/initial/top_nav_background.svg");
@@ -14,7 +16,6 @@ header {
   border-top-right-radius: var(--top-radius);
   border-top-left-radius: var(--top-radius);
 
-  margin: var(--gap);
   .header__container {
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,6 @@ header {
 
   .header__buttons {
     position: relative;
-    width: 208px;
     display: flex;
     align-items: center;
     gap: var(--gap);
@@ -48,7 +48,7 @@ header {
 
     position: absolute;
     top: 40px;
-    right: 45px;
+    right: 0;
 
     background-color: var(--cream-color);
     padding: 14px 0;
@@ -60,6 +60,12 @@ header {
       &:hover {
         background-color: var(--white-color);
       }
+    }
+  }
+
+  .header__navigation {
+    @media (max-width: v.$desktop) {
+      display: none;
     }
   }
 }
