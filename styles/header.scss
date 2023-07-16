@@ -7,6 +7,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: -30px;
+  padding-bottom: 30px;
+  font: var(--smaller-font);
+  color: var(--white-color);
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    gap: var(--gap);
+    text-align: center;
+  }
 }
 
 header {
@@ -21,6 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: var(--gap) 0;
+    gap: var(--gap);
   }
 
   .header__buttons {
@@ -63,9 +77,23 @@ header {
     }
   }
 
-  .header__navigation {
-    @media (max-width: v.$desktop) {
+  // Hamburger пропадає якщо наше розширення більше tablet >768px
+  .header__mobile-trigger {
+    @media (min-width: v.$tablet) {
       display: none;
+    }
+  }
+
+  .header__navigation {
+    ul {
+      flex-wrap: wrap;
+      column-gap: var(--gap);
+    }
+
+    li {
+      width: 80px;
+      display: flex;
+      justify-content: flex-start;
     }
   }
 }
