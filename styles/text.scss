@@ -24,4 +24,14 @@
   &_emoji {
     font-size: 20px;
   }
+
+  &_with-bg {
+    font-size: 12px;
+    font-weight: 400;
+    background-color: var(--silver-violet);
+    color: var(--violet-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    line-height: 1.7;
+  }
 }

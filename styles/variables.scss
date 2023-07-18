@@ -5,13 +5,25 @@ $desktop: 1200px;
 $bigger-desktop: 1400px;
 
 :root {
+  // colors
+  --black-color: #111;
+  --grey-color: #ccc;
+  --white-color: #fff;
+  --cream-color: #f0eff5;
+  --silver-violet: #ebe9f2;
+  --violet-color: #5842bc;
+
   // font
-  --smaller-font: 700 12px "Inter", sans-serif;
-  --font: 400 14px "Inter", sans-serif;
-  --biggest-font: 700 40px "Inter", sans-serif;
+  --smaller-font: 400 12px/20px "Inter", sans-serif;
+  --medium-font: 400 14px/22px "Inter", sans-serif;
+  --font: 400 15px/30px "Inter", sans-serif;
+  --large-font: 700 20px/28px "Inter", sans-serif;
+  --extra-large-font: 700 40px/52px "Inter", sans-serif;
+  --biggest-font: 700 52px/60px "Inter", sans-serif;
 
   // spacers
   --gap: 20px;
 
+  // animation
   --transition: all 0.3s ease;
 }

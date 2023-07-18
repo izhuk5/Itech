@@ -1,0 +1,20 @@
+@use "styles/variables" as v;
+
+.one-app {
+  &__container {
+    display: flex;
+    background-color: lightpink;
+  }
+  &__left {
+    flex: 1;
+    h1 {
+      max-width: 542px;
+      font: var(--biggest-font);
+    }
+  }
+
+  &__right {
+    flex: 1;
+    background-color: orange;
+  }
+}
